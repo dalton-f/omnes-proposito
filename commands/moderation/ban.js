@@ -1,4 +1,8 @@
-const { SlashCommandBuilder, MessageFlags } = require("discord.js");
+const {
+  SlashCommandBuilder,
+  MessageFlags,
+  PermissionsBitField,
+} = require("discord.js");
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -18,9 +22,11 @@ module.exports = {
     ),
 
   async execute(interaction) {
-    if (!interaction.member.permissions.has("ADMINISTRATOR")) {
+    if (
+      !interaction.member.permissions.has(PermissionsBitField.Flags.BanMembers)
+    ) {
       return interaction.reply({
-        content: "❌ You must be an administrator to use this command.",
+        content: "You must be an administrator to use this command.",
         flags: MessageFlags.Ephemeral,
       });
     }
