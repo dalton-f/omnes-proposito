@@ -27,13 +27,6 @@ module.exports = {
     ),
 
   async execute(interaction) {
-    // if (!interaction.member.permissions.has("ADMINISTRATOR")) {
-    //   return interaction.reply({
-    //     content: "❌ You must be an administrator to use this command.",
-    //     flags: MessageFlags.Ephemeral,
-    //   });
-    // }
-
     const subcommand = interaction.options.getSubcommand();
     const embed = new EmbedBuilder().setColor("Blue");
 
