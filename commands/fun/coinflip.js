@@ -5,7 +5,7 @@ module.exports = {
     .setName("coinflip")
     .setDescription("Flip a coin."),
   async execute(interaction) {
-    const result = Math.random() < 0.5 ? "Heads" : "Tails";
+    const result = Math.random() < 0.5 ? "heads" : "tails";
 
     const embed = new EmbedBuilder()
       .setColor("Blue")
