@@ -2,11 +2,10 @@
 
 A simple multi-purpose discord bot that helps you manage your server and have some fun by providing a range of commands.
 
-## Table of content
+## Table of Contents
 
 - [Features & Commands](#features--commands)
 - [Contributing](#contributing)
-- [Author](#author)
 - [License](#license)
 
 ## Features & Commands
