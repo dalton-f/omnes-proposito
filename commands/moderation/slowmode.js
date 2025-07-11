@@ -35,7 +35,7 @@ module.exports = {
 
     const duration = interaction.options.getInteger("duration");
     const reason =
-      interaction.options.getString("reason") || "No reason provided";
+      interaction.options.getString("reason") ?? "No reason provided";
 
     if (duration < 0) {
       return interaction.reply({
