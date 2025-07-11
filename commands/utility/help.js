@@ -34,8 +34,6 @@ module.exports = {
         const filePath = path.join(commandsSubfolder, file);
         const command = require(filePath);
 
-        console.log(command.data);
-
         const commandName = command.data?.name || file.replace(".js", "");
         const commandDescription =
           command.data?.description || "No description.";
