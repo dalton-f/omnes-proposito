@@ -8,7 +8,7 @@ module.exports = {
     const result = Math.random() < 0.5 ? "heads" : "tails";
 
     const embed = new EmbedBuilder()
-      .setColor("Blue")
+      .setColor("#0099ff")
       .setTitle(":coin: Coin Flip")
       .setDescription(`You flipped a coin and got ${result}!`);
 

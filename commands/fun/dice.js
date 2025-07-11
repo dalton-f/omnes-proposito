@@ -24,7 +24,7 @@ module.exports = {
     const result = Math.floor(Math.random() * sides) + 1;
 
     const embed = new EmbedBuilder()
-      .setColor("Blue")
+      .setColor("#0099ff")
       .setTitle(":game_die: Dice Roll")
       .setDescription(`You rolled a ${sides}-sided dice and got a ${result}!`);
 

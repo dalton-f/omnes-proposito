@@ -28,7 +28,7 @@ module.exports = {
 
   async execute(interaction) {
     const subcommand = interaction.options.getSubcommand();
-    const embed = new EmbedBuilder().setColor("Blue");
+    const embed = new EmbedBuilder().setColor("#0099ff");
 
     switch (subcommand) {
       case "user": {

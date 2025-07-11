@@ -29,7 +29,7 @@ module.exports = {
     const response = responses[Math.floor(Math.random() * responses.length)];
 
     const embed = new EmbedBuilder()
-      .setColor("Blue")
+      .setColor("#0099ff")
       .setTitle(":8ball: Magic 8-ball")
       .setDescription(
         `**You asked:** ${question} \n\n**The magic 8-ball says:** ${response}`
